@@ -1,0 +1,127 @@
+.skill{
+    height: 100vh;
+}
+#skill{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+.lang{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 40px;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.lang svg{
+    width: 75px;
+    height: 75px;
+}
+.lang>div{
+    transition: all 0.5s;
+     cursor: pointer;
+}
+#skill{
+    width: 80%;
+    margin: auto;
+}
+
+#react{
+    position: relative;
+    animation: 3s linear 0s infinite spiner;
+}
+#reacts:hover{
+   color: #61DBFB;
+   cursor: pointer;
+   transition: all 0.5s;
+}
+@keyframes spiner {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#javascript:hover{
+     color: #f0db4f;
+}
+#html:hover{
+    color: #e34c26;
+}
+#css:hover{
+    color: #264de4;
+}
+
+#node:hover{
+    color: #3C873A;
+}
+#express:hover{
+    color: #264de4;
+}
+#mongo:hover{
+    color: #419f39;
+}
+#redux:hover{
+    color: #764abc;
+}
+#post:hover{
+    color: #ef5b25;
+}
+#npm:hover{
+    color: #CC3534;
+}
+#git:hover{
+    color: #F1502F;
+}
+#dsa:hover{
+    color: #264de4;
+}
+@media only screen and (max-width:1290px) {
+    .lang{
+        width: 50%;
+    }
+}
+@media only screen and (max-width:1150px) {
+    .lang{
+        width: 70%;
+    }
+}
+@media only screen and (max-width:800px) {
+    .lang{
+        width: 90%;
+    }
+}
+@media only screen and (max-width:500px) {
+    .lang{
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+    }
+    .lang svg{
+        width: 50px;
+        height: 50px;
+    }
+}
+@media only screen and (max-width:300px){
+    .lang{
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 10px;
+    }
+    .land svg{
+        width: 25px;
+        height: 25px;
+    }
+}
+@media only screen and (max-height:500px) {
+    .skill{
+       height: 500px;
+    }
+    #skill{
+        height: 500px;
+    }
+}

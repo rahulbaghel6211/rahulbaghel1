@@ -1,0 +1,193 @@
+.mainhome{
+    height: 100vh;
+}
+#hmain{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home{
+    width: 60%;
+    display: flex;
+    gap: 20px;
+    margin: auto;
+    justify-content: space-around;
+}
+.flex{
+    display: flex;
+}
+#profile{
+    border-radius: 50%;
+}
+  
+  @keyframes Gradient {
+    0% {
+    background-color: 0% 50%
+    }
+  100% {
+  background-position: 0% 50%
+  }
+  }
+#righthome{
+    margin-top: 40px;
+}
+#greet{
+    font-size: 50px;
+}
+#name{
+    font-size: 70px;
+}
+#pro{
+    font-size: 20px;
+}
+#personal{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+#email{
+    margin-right: 10px;
+}
+#phone{
+    margin:0px 10px;
+    margin-left: 20px;
+}
+#expand_more{
+    font-size: 60px;
+    color: rgba(0, 0, 0, 0.534);
+}
+.col{
+    color: rgba(255, 255, 255, 0.562);
+    color: rgba(0, 0, 0, 0.575);
+}
+#expand{
+    width: 100%;
+    bottom:5px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    /* left: 50%; */
+    animation: expanda 1s infinite;
+
+}
+@keyframes expanda {
+    0%{
+        color: rgba(128, 128, 128, 0.055);
+        /* left: 50%; */
+        text-align: center;
+        bottom: 40px;
+    }
+    10%{
+        color: rgb(0, 0, 0);
+        /* left: 50%; */
+        text-align: center;
+        bottom: 30px;
+    }
+    100%{
+        color: rgba(128, 128, 128, 0.041);
+        /* left: 50%; */
+        text-align: center;
+        bottom: 5px;
+    }
+}
+@keyframes gradient{
+    0%{
+        background:linear-gradient(164deg, #332FD0 0%, #E15FED 52%, #6EDCD9 100%)
+    }
+    100%{
+        background:linear-gradient(64deg, #d02f2f 0%, #E15FED 52%, #6EDCD9 100%)
+    }
+}
+
+#resume{
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: white;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border: transparent;
+}
+
+@media only screen and (max-width:1450px) {
+    .home{
+        width: 80%;
+    }
+}
+@media only screen and (max-width:1080px) {
+    .home{
+        width: 90%;
+    }
+}
+@media only screen and (max-width:980px) {
+    
+    #profilediv{
+        margin: auto;
+    }
+    #profile{
+        height: 33vh;
+    }
+    #righthome{
+        text-align: center;
+    }
+    #personal{
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        margin-top: 50px;
+    }
+}
+@media only screen and (max-width:600px){
+    .home{
+        width: 100%;
+       display: grid;
+       align-items: center;
+       gap: 0px;
+    }
+    #greet{
+        font-size: 30px;
+    }
+    #name{
+        font-size: 50px;
+    }
+    #personal{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media only screen and (max-height:520px){
+    .home{
+        gap: 0px;
+    }
+    #greet{
+        font-size: 30px;
+    }
+    #name{
+        font-size: 40px;
+    }
+    #pro{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-height:400px){
+    .mainhome{
+        height: 400px;
+    }
+    #profile{
+        height: 200px;
+    }
+    #hmain{
+        height: 400px;
+    }
+    #greet{
+        font-size: 20px;
+    }
+    #name{
+        font-size: 30px;
+    }
+    #pro{
+        font-size: 10px;
+    }
+}

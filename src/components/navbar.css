@@ -1,0 +1,113 @@
+#menu, #close{
+    display: none;
+}
+.navbar{
+    display: block;
+    align-items: flex-end;
+    background-color: rgba(255, 255, 255, 0.315);
+    height: 70px;
+    width: 30%;
+    margin-top: 40px;
+    border-radius:  0px 35px 35px 0px;
+    position: fixed;
+}
+.navbar div{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+.navbar button{
+    padding: 5px;
+    margin: 18px 5px;
+    font-size: 18px;
+    border: transparent;
+    background-color: transparent;
+}
+button:hover{
+    cursor: pointer;
+    color: #032030;
+    border-bottom: 3px solid #032030;
+}
+#bright{
+    background-color: transparent;
+}
+
+@media only screen and (max-width:1450px){
+    .navbar{
+        width: 40%;
+    }
+}
+@media only screen and (max-width:920px){
+    .navbar{
+        height: 60px;
+        width: 50%;
+    }
+    .navbar button{
+        font-size: 16px;
+        padding: 5px;
+    }
+}
+@media only screen and (max-width:670px){
+    #menu{
+        display: block;
+        top: 20px;
+        margin-left: 20px;
+        position: fixed;
+        color: gray;
+    }
+    #close{
+        display: flex;
+        position: fixed;
+        top: 20px;
+        margin-left: -70%;
+        position: fixed;
+        color: black;
+    }
+    #span, #menui{
+        font-size: 50px;
+    }
+    .navbar{
+
+        margin-top: 0px;
+        border-radius: 0px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow: auto;
+        width: 100%;
+        height: 100%;
+        background-color: #032030;
+    }
+    .navbar div{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar button{
+        font-size: 40px;
+        padding: 5px;
+        border: transparent;
+        background-color: transparent;
+    }
+    button:hover{
+        color: #032030;
+        border-bottom: 3px solid #032030;
+    }
+}
+@media only screen and (max-height:520px){
+    #span, #menui{
+        font-size: 25px;
+    }
+    .navbar button{
+        font-size: 18px;
+        padding: 0px;
+    }
+}
+@media only screen and (max-height:340px){
+    .navbar button{
+        margin: 7px;
+    }
+}
